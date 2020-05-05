@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -120,12 +121,12 @@ public class BlockBreakerPanel extends JPanel implements KeyListener
 		if(e.getKeyCode() == KeyEvent.VK_LEFT && paddle.x>0)
 		{
 //			System.out.println("LEFT ARROW PRESSED");
-			paddle.x-=15;
+			paddle.x-=20;
 		}
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT && paddle.x< (getWidth()-paddle.width))
 		{
 //			System.out.println("RIGHT ARROW PRESSED");
-			paddle.x+=15;
+			paddle.x+=20;
 		}
 		
 	}
